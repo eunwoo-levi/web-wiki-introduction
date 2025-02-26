@@ -107,6 +107,16 @@ aside h2 {
   text-indent: -1000rem;
 }
 
+.right-sidebar {
+  position: sticky;
+  top: 20px;
+  height: calc(100vh - 40px);
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
 aside.right-sidebar nav {
   background-color: pink;
   padding: var(--right-sidebar-padding);
