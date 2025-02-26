@@ -212,3 +212,7 @@ textarea {
   padding: 0 8px;
   font-size: 1rem;
 }
+
+form {
+  padding: 20px;
+}
