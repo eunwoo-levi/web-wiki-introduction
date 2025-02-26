@@ -40,3 +40,24 @@
     transform: translateY(-10px);
   }
 }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin: 20px auto;
+  border: 2px solid #ddd;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.item {
+  background-color: #b100fc;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
