@@ -84,3 +84,38 @@
   font-weight: 500;
   letter-spacing: 2px;
 }
+
+.comment-header {
+  font-weight: bold;
+}
+
+.comment-area {
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  font-weight: bold;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+
+.cancel-button {
+  width: 80px;
+  height: 100%;
+}
+.cancel-button:hover {
+  background-color: rgb(255, 186, 186);
+}
+
+.post-button {
+  width: 80px;
+  height: 100%;
+  background-color: rgb(186, 255, 255);
+  cursor: pointer;
+}
+
+.post-button:hover {
+  background-color: rgb(186, 255, 186);
+  cursor: pointer;
+}
