@@ -108,7 +108,19 @@ aside h2 {
 }
 
 aside.right-sidebar nav {
+  background-color: pink;
   padding: var(--right-sidebar-padding);
+}
+
+aside.right-sidebar li {
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: all 0.5s ease;
+}
+
+aside.right-sidebar li:hover {
+  transform: scale(1.1);
+  color: purple;
 }
 
 ol.contents {
