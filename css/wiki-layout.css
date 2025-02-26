@@ -120,6 +120,10 @@ aside.right-sidebar li {
 
 aside.right-sidebar li:hover {
   transform: scale(1.1);
+}
+
+aside.right-sidebar a:hover {
+  transform: scale(1.1);
   color: purple;
 }
 
