@@ -168,3 +168,7 @@ footer p {
   --divider-color: #efefef;
   --font-default-color: #333;
 }
+
+html {
+  scroll-behavior: smooth;
+}
