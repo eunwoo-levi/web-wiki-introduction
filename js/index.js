@@ -51,7 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const data = await response.json();
         console.log('불러온 데이터:', data);
 
-        // 데이터 구조 확인 및 올바르게 파싱
         if (Array.isArray(data.record.comments)) {
           comments = data.record.comments;
         } else {
@@ -59,10 +58,10 @@ document.addEventListener('DOMContentLoaded', () => {
           comments = [];
         }
 
-        // 댓글 목록을 화면에 표시
-        commentList.innerHTML = '';
+        commentList.textContent = '';
         comments.forEach((comment) => {
           const commentItem = document.createElement('li');
+          commentItem.className = 'comment-item'; // 댓글 스타일 클래스 추가
           commentItem.textContent = comment;
           commentList.appendChild(commentItem);
         });
