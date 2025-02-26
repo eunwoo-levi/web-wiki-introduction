@@ -48,6 +48,10 @@ h2.title {
 }
 
 h3.subtitle {
+  border-radius: 10px;
+  padding: 8px;
+  color: white;
+  background-color: black;
   font-size: 1.6rem;
   margin: var(--page-subtitle-margin-y) 0;
 }
@@ -108,16 +112,22 @@ aside h2 {
 }
 
 .right-sidebar {
+  background-color: #d6dfff;
   position: sticky;
-  top: 20px;
-  height: calc(100vh - 40px);
+  top: 0;
+  height: 100vh;
   overflow-y: auto;
-  background-color: #f9f9f9;
   padding: 20px;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.right-sidebar div {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 aside.right-sidebar nav {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   background-color: pink;
   padding: var(--right-sidebar-padding);
 }
