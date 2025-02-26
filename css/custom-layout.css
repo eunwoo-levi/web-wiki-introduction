@@ -69,3 +69,18 @@
   margin-top: 50px;
   font-weight: bold;
 }
+
+.bold {
+  font-weight: bold;
+}
+
+.movie-contents {
+  width: 100%;
+  display: flex;
+  margin: 40px;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
