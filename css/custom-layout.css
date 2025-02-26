@@ -1,0 +1,42 @@
+.left-header {
+  background: linear-gradient(270deg, #b100fc, #ffffff, #00c6ff, #e3b3f8);
+  background-size: 600% 600%;
+  animation: waveAnimation 9s ease-in-out infinite;
+}
+
+@keyframes waveAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.main-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.main-header h2 {
+  font-size: 2.4rem;
+  display: inline-block;
+  animation: bounce 0.5s infinite alternate;
+  color: #b100fc;
+  font-weight: bold;
+  margin: 20px;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
