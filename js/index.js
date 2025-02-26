@@ -1,19 +1,21 @@
-console.log(
-  "%c" +
-    " __      __  ______   __  __   ______     " +
-    "\n" +
-    "/\\ \\  __/\\ \\ /\\__  _\\ /\\ \\ /\\ \\ /\\__  _\\    " +
-    "\n" +
-    "\\ \\ \\/\\ \\ \\ \\/_\\/\\ \\/ \\ \\ \\/'/'\\/ _/\\ \\/    " +
-    "\n" +
-    " \\ \\ \\ \\ \\ \\ \\ \\ \\ \\  \\ \\ , <    \\ \\ \\    " +
-    "\n" +
-    "  \\ \\ \\_/ \\_\\ \\ \\_\\ \\__\\ \\ \\\\`\\   \\_\\ \\__ " +
-    "\n" +
-    "   \\ `\\___x___/ /\\_____\\\\ \\_\\ \\_\\ /\\_____\\ " +
-    "\n" +
-    "    '/__//__/  /_____/ \\/_/\\/_/ /_____/",
-  "color: #d81b60; font-size: 16px; font-weight: bold;"
-);
+document.addEventListener('DOMContentLoaded', () => {
+  const sections = document.querySelectorAll('section');
 
-console.log("알맞은 스크립트를 작성하세요");
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.1,
+    }
+  );
+
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
+});
