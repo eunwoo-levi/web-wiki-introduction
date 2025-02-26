@@ -97,18 +97,20 @@
 
         <section id="comment">
           <div class="comment-writing-container">
-            <form>
+            <form id="comment-form">
               <fieldset>
                 <legend class="comment-header">리바이를 위한 예쁜 댓글 쓰기</legend>
                 <div class="comment-area">
                   <img src="./images/comment-author-icon.png" alt="Comment 로고 이미지" />
-                  <textarea placeholder="댓글 써봐요:)"></textarea>
-                  <button class="cancel-button">취소</button>
+                  <textarea id="comment-input" placeholder="댓글 써봐요:)" required></textarea>
+                  <button class="cancel-button" type="button">취소</button>
                   <button class="post-button" type="submit">등록</button>
                 </div>
               </fieldset>
             </form>
           </div>
+
+          <ul id="comment-list" class="comment-list"></ul>
         </section>
 
         <footer>
