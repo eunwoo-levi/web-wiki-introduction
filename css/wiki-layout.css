@@ -68,7 +68,18 @@ article > p {
   text-indent: 8px;
 }
 
-section,
+section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+  will-change: opacity, transform;
+}
+
+section.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 article {
   display: flex;
   flex-flow: column;
